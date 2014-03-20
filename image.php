@@ -4,16 +4,15 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-
 		<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'image-attachment' ); ?>>

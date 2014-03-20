@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Iconic-One\n"
 "POT-Creation-Date: 2013-08-26 23:37+0530\n"
-"PO-Revision-Date: 2013-11-04 15:23+0800\n"
+"PO-Revision-Date: 2014-03-20 18:16+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr "什么都没有"
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/content-none.php:17
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/index.php:53
 msgid "Kindly search your topic below or browse the recent posts."
-msgstr ""
+msgstr "在下方查找你想要的主题或查看最近的文章"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/archive.php:29
 #, php-format
@@ -96,12 +96,12 @@ msgstr "编辑"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/content.php:14
 msgid "Featured Article"
-msgstr ""
+msgstr "特色文章"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/content.php:22
 #, php-format
 msgid "Permalink to %s"
-msgstr ""
+msgstr "链接到 %s"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/content.php:28
 msgid "By"
@@ -127,7 +127,7 @@ msgstr "继续阅读 <span class=\"meta-nav\">&rarr;</span>"
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/content.php:77
 #, php-format
 msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+msgstr "查看 %s 的所有文章 <span class=\"meta-nav\">&rarr;</span>"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:34
 msgid "Primary Menu"
@@ -136,11 +136,11 @@ msgstr "一级菜单"
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:119
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "第%s页"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:144
 msgid "Main Sidebar"
-msgstr ""
+msgstr "一级侧边栏"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:146
 msgid "This is a Sitewide sidebar which appears on posts and pages"
@@ -149,7 +149,7 @@ msgstr ""
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:168
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/single.php:18
 msgid "Post navigation"
-msgstr ""
+msgstr "文章导航"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:169
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
@@ -192,7 +192,7 @@ msgstr ""
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:264
 #, php-format
 msgid "View all posts by %s"
-msgstr ""
+msgstr "查看 %s 的所有文章"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/functions.php:270
 #, php-format
@@ -217,7 +217,7 @@ msgstr ""
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/header.php:60
 msgid "Skip to content"
-msgstr "调到正文"
+msgstr "挑至正文"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/image.php:26
 #, php-format
@@ -264,7 +264,7 @@ msgstr "最近的文章"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/sidebar.php:24
 msgid "Pages"
-msgstr ""
+msgstr "页面"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/sidebar.php:29
 msgid "Tag Cloud"
@@ -277,7 +277,7 @@ msgstr "标签归档: %s"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/inc/iconic-one-options.php:17
 msgid "Iconic One"
-msgstr ""
+msgstr "Yestin One"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/inc/iconic-one-options.php:18
 msgid "Customize Iconic One"
@@ -298,7 +298,7 @@ msgstr ""
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/inc/widget-recent-posts.php:11
 msgid "List recent posts with thumbnails from custom categories."
-msgstr ""
+msgstr "从自定义的分类中列出最近带有缩略图的文章"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/inc/widget-recent-posts.php:13
 msgid "themonic Recent Posts"
@@ -330,7 +330,7 @@ msgstr "展示的文章数"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/inc/widget-recent-posts.php:125
 msgid "(at most 15)"
-msgstr ""
+msgstr "(最多15)"
 
 #: C:\xampp\apps\wordpress\htdocs\wp-content\themes\iconic-one/inc/widget-recent-posts.php:127
 msgid "Posts offset"

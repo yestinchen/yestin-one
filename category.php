@@ -1,16 +1,18 @@
 <?php
 /*
  * Category pages section display - posts with excerpt and thumbs.
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 get_header(); ?>
 
 	<section id="primary" class="site-content">
-		<div id="content" role="main">
+		<div id="content" role="main" class="archive-content">
 
+		<?php if (function_exists('yestin_breadcrumbs')) yestin_breadcrumbs(); ?>
+		
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
 				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'themonic' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>

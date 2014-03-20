@@ -1,9 +1,9 @@
 <?php
 /*
  * Comment display template of Iconic One.
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 /*
@@ -20,13 +20,14 @@ if ( post_password_required() )
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
+	<?php /*
 		<h2 class="comments-title">
 			<?php
-				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'themonic' ),
+				printf( _n( '&ldquo;%2$s&rdquo; 有1条评论', '&ldquo;%2$s&rdquo; 有%1$s条评论', get_comments_number(), 'themonic' ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
-
+	*/?>
 		<ol class="commentlist">
 			<?php wp_list_comments( array( 'callback' => 'themonic_comment', 'style' => 'ol' ) ); ?>
 		</ol><!-- .commentlist -->

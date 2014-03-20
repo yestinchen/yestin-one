@@ -1,12 +1,12 @@
 <?php
 /*
- * Header Section of Iconic One
+ * Header Section of Yestin One
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -21,7 +21,47 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title><?php
+	// 如果是首页和文章列表页面, 显示博客标题
+	if(is_front_page() || is_home()) { 
+		//bloginfo('name');
+		wp_title( '|', true, 'right' ); 
+ 
+	// 如果是文章详细页面和独立页面, 显示文章标题
+	} else if(is_single() || is_page()) {
+		wp_title('-',true,'right');
+ 
+	// 如果是类目页面, 显示类目表述
+	} else if(is_category()) {
+		printf('%1$s 类目的文章存档', single_cat_title('', false));
+ 
+	// 如果是搜索页面, 显示搜索表述
+	} else if(is_search()) {
+		printf('%1$s 的搜索结果', wp_specialchars($s, 1));
+ 
+	// 如果是标签页面, 显示标签表述
+	} else if(is_tag()) {
+		printf('%1$s 标签的文章存档', single_tag_title('', false));
+ 
+	// 如果是日期页面, 显示日期范围描述
+	} else if(is_date()) {
+		$title = '';
+		if(is_day()) {
+			$title = get_the_time('Y年n月j日');
+		} else if(is_year()) {
+			$title = get_the_time('Y年');
+		} else {
+			$title = get_the_time('Y年n月');
+		}
+		printf('%1$s的文章存档', $title);
+ 
+	// 其他页面显示博客标题
+	} else {
+		//bloginfo('name');
+		wp_title( '|', true, 'right' ); 
+	}
+?></title>
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
@@ -29,6 +69,26 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<?php if (is_home()){
+	$description = "Yestin的技术博客,个人博客,技术博客,软件开发,Yestin,IYestin,IT博客,关注前沿技术,记录技术文章,从前端到后台";
+	$keywords = "技术博客,个人博客,Yestin,IYestin,软件开发,编程,程序";
+	} elseif (is_single()){
+		//."|".get_the_excerpt()
+	$description = $post->post_title ;
+	$keywords = "";
+	$tags = wp_get_post_tags($post->ID);
+	foreach ($tags as $tag ) {
+		$keywords = $keywords . $tag->name . ",";
+	}
+	} elseif(is_category()){
+		$description = category_description();
+	}
+
+	if($description!="")
+		echo '<meta name="description" content="'.$description.'" />';
+	if($keywords !="") 
+		echo '<meta name="keywords" content="'.$keywords.'" />';
+?>
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
@@ -47,7 +107,7 @@
 		<?php else : ?>
 		<hgroup>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				<br .../> <a class="site-description"><?php bloginfo( 'description' ); ?></a>
+			<a class="site-description"><?php bloginfo( 'description' ); ?></a>
 		</hgroup>
 	<?php if( get_theme_mod( 'iconic_one_social_activate' ) == '1') { ?>
 		<div class="socialmedia">

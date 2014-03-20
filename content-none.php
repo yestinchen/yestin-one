@@ -2,9 +2,9 @@
 /*
  * "No posts found" template.
  *
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 ?>
 

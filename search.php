@@ -2,9 +2,9 @@
 /*
  * The template for displaying Search Results pages.
  *
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 get_header(); ?>
@@ -12,6 +12,8 @@ get_header(); ?>
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
+		<?php if (function_exists('yestin_breadcrumbs')) yestin_breadcrumbs(); ?>
+		
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

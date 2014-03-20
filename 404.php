@@ -1,16 +1,18 @@
 <?php
 /*
  * Template for displaying 404 pages.
- * Iconic One displays the list of recent posts and search box for better user experience.
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * Yestin One displays the list of recent posts and search box for better user experience.
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
+
+			<?php if (function_exists('yestin_breadcrumbs')) yestin_breadcrumbs(); ?>
 
 			<article id="post-0" class="post error404 no-results not-found">
 				<header class="entry-header">

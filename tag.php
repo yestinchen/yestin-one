@@ -4,15 +4,16 @@
  *
  * Read more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 get_header(); ?>
 
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
+		<?php if (function_exists('yestin_breadcrumbs')) yestin_breadcrumbs(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
@@ -31,9 +32,11 @@ get_header(); ?>
 				 * this in a child theme then include a file called called content-___.php
 				 * (where ___ is the post format) and that will be used instead.
 				 */
-				get_template_part( 'content', get_post_format() );
-
-			endwhile;
+				?>
+			<div class="post-list-entries">
+				<?php get_template_part( 'content', get_post_format() ); ?>
+			</div>
+			<?php endwhile;
 
 			themonic_content_nav( 'nav-below' );
 			?>

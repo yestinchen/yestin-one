@@ -3,9 +3,9 @@
  * Author Post Archive pages display template.
  * Read more here: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress - Themonic Framework
- * @subpackage Iconic_One
- * @since Iconic One 1.0
+ * @package WordPress - Yestin
+ * @subpackage Yestin_One
+ * @since Yestin One 1.0
  */
 
 get_header(); ?>
@@ -13,6 +13,8 @@ get_header(); ?>
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
+		<?php if (function_exists('yestin_breadcrumbs')) yestin_breadcrumbs(); ?>
+		
 		<?php if ( have_posts() ) : ?>
 
 			<?php
