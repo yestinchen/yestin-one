@@ -20,4 +20,6 @@
 		<footer class="entry-meta">
 			<?php edit_post_link( __( 'Edit', 'themonic' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
+		<?php require_once( get_template_directory() . '/inc/baidu-share.php' ); ?>
+		<div class="clear"></div>
 	</article><!-- #post -->

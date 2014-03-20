@@ -13,6 +13,7 @@
 add_action( 'after_setup_theme', 'setup_theme' );
 
 function setup_theme(){
+	remove_action( 'wp_head',   'locale_stylesheet');
 	remove_action( 'wp_head',   'feed_links_extra', 3 ); 
 	remove_action( 'wp_head',   'rsd_link' ); 
 	remove_action( 'wp_head',   'wlwmanifest_link' ); 
@@ -21,6 +22,7 @@ function setup_theme(){
 	remove_action( 'wp_head',   'wp_generator' ); 
 	add_action('pre_ping','remove_self_ping');
 	add_filter('the_content','setup_copyright'); 
+	wp_deregister_script( 'l10n' ); 
 }
 
 function remove_self_ping( &$links ) {
@@ -85,6 +87,9 @@ add_image_size('excerpt-thumbnail', 200, 200, true);
 function themonic_scripts_styles() {
 	global $wp_styles;
 
+	wp_deregister_script( 'jquery' ); 
+	wp_register_script( 'jquery', 'http://code.jquery.com/jquery-1.11.0.min.js'); 
+	wp_enqueue_script( 'jquery' ); 
 	/*
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).
@@ -95,7 +100,8 @@ function themonic_scripts_styles() {
  /*
 	 * Adds Selectnav.js JavaScript for handling the navigation menu and creating a select based navigation for reposive layout.
  */
-   wp_enqueue_script('themonic-mobile-navigation', get_template_directory_uri() . '/js/selectnav.js', array(), '1.0', true );
+   	wp_enqueue_script('themonic-mobile-navigation', get_template_directory_uri() . '/js/selectnav.js', array(), '1.0', true );
+   	wp_enqueue_script('yestin-script', get_template_directory_uri() . '/js/yestin.js', array(), '1.0', true );
 /*
      * Loads the awesome readable ubuntu font CSS file for Iconic One.
 */

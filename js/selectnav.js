@@ -156,6 +156,6 @@ window.selectnav = (function(){
 })();
 // custom script for iconic one 
 selectnav('menu-top', {
-    label: 'Menu', nested: true, indent: '-'
+    label: '菜单', nested: true, indent: '-'
     }
 );
