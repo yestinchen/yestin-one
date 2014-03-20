@@ -24,7 +24,9 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<div class="post-list-entries">
+					<?php get_template_part( 'content', get_post_format() ); ?>
+				</div>
 			<?php endwhile; ?>
 
 			<?php themonic_content_nav( 'nav-below' ); ?>

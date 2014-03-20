@@ -1845,7 +1845,7 @@ tag rainbow colors end
 /*
 archives include archives by date.
 **/
-.archive-header{background: #fff; padding: 20px;}
+.archive-header,.page-header{background: #fff; padding: 20px;}
 .archive-content{background: #fff; border-bottom: 3px dashed #C8DFEE; padding-bottom: 30px;}
 .yestin-entry-list{margin: 25px; }
 .yestin-entry-list .updated{display: inline-block; width: 120px;}
