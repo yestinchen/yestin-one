@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Iconic One Customizer - visit Themonic.com
+ * Yestin One Customizer 
  *
- * @since Iconic One 1.0
+ * @since Yestin One 1.0
  *
  */
 function themonic_customize_register( $wp_customize ) {
@@ -15,7 +15,7 @@ add_action( 'customize_register', 'themonic_customize_register' );
 /*
  * Loads Theme Customizer preview changes asynchronously.
  *
- * @since Iconic One 1.0
+ * @since Yestin One 1.0
  */
 function themonic_customize_preview_js() {
 	wp_enqueue_script( 'themonic-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130527', true );

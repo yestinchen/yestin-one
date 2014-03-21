@@ -423,8 +423,7 @@ html {
 	font-size: 90.5%;
 }
 body {
-	font-size: 14px;
-	/*font-family: "Ubuntu", Helvetica, Arial, sans-serif;*/
+	font-size: 15px;
 	font-family:"Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #444;
@@ -1856,4 +1855,4 @@ archives include archives by date.
 /*
 Breadcrumb
 */
-.bread-crumb{margin-bottom: 10px;padding: 10px;background: #f8f8f8;}
+.bread-crumb{padding: 10px;background: #f8f8f8; line-height: 1.5}
