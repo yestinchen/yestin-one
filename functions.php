@@ -10,6 +10,9 @@
  * © 2014 Yestin, Yestin.com
  */
 
+//links manage
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
 add_action( 'after_setup_theme', 'setup_theme' );
 
 function setup_theme(){
@@ -23,6 +26,7 @@ function setup_theme(){
 	add_action('pre_ping','remove_self_ping');
 	add_filter('the_content','setup_copyright'); 
 	wp_deregister_script( 'l10n' ); 
+
 }
 
 function remove_self_ping( &$links ) {
