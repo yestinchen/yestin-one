@@ -27,7 +27,7 @@ add_action('admin_menu', 'iconic_one_customize_button');
  */ 
 function iconic_one_options_display() { 
 ?> 
-<!-- Create a header in the default WordPress 'wrap' container --> 
+<!-- Create a header in the default Wordpress 'wrap' container --> 
 <div class="wrap"style='border:1px solid #e1e1e1; padding:20px;min-width:750px; max-width:960px;'> 
 	<div class="header" style="margin-bottom:10px;">   
        <div class="hleft" style="float:left;width:50%;">

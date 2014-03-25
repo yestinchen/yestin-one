@@ -11,7 +11,7 @@
 get_header(); ?>
 
 	<section id="primary" class="site-content">
-		<div id="content" role="main">
+		<div id="content" role="main" class="archive-content">
 
 		<?php if (function_exists('yestin_breadcrumbs')) yestin_breadcrumbs(); ?>
 		
