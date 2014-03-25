@@ -16,6 +16,7 @@
 		<div class="clear"></div>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
+<?php require (get_template_directory() . '/inc/ga.php'); ?>
 
 <?php wp_footer(); ?>
 </body>
