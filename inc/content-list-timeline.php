@@ -6,6 +6,7 @@
     <span class="right">
         <span class="vcard author">
             <a class="fn" href="http://www.iyestin.com/" title="Yestin" rel="author">Yestin</a>
+            <a class="fn" href="https://plus.google.com/112304573807678812758?rel=author" title="+Yestin">+</a>
             <?php //echo the_author_posts_link(); ?>
         </span>
         <a class="link-comments" href="<?php  comments_link(); ?>">(<?php comments_number('0','1','%'); echo '/',get_post_views(get_the_ID());?>)</a>

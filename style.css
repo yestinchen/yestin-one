@@ -1376,7 +1376,7 @@ select.selectnav {margin:4px; padding:10px;} /* centers select */
 .themonic-nav {
     box-shadow:none;
 }
-.link-comments{display:none;}
+/*.link-comments{display:none;}*/
 .entry-header .entry-title {
     margin-top: 20px;
 	}

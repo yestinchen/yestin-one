@@ -19,6 +19,7 @@
             <span class="updated"><?php echo get_the_date();?></span>
             <span class="vcard author">
                 <a class="fn" href="http://www.iyestin.com/" title="Yestin" rel="author">Yestin</a>
+                <a class="fn" href="https://plus.google.com/112304573807678812758?rel=author" title="+Yestin">+</a>
                 <?php //echo the_author_posts_link(); ?>
             </span>
             <div class="no-float"></div>
