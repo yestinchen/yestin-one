@@ -13,6 +13,15 @@
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		</header>
 
+        <div class="entry-yestin-meta">
+            <span class="vcard author">
+                <a class="fn" href="http://www.iyestin.com/" title="Yestin" rel="author">Yestin</a>
+                <a class="fn" href="https://plus.google.com/112304573807678812758?rel=author" title="+Yestin">+</a>
+                <?php //echo the_author_posts_link(); ?>
+            </span>
+            <div class="no-float"></div>
+        </div>
+
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'themonic' ), 'after' => '</div>' ) ); ?>
