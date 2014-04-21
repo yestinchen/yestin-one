@@ -141,6 +141,16 @@ function setOnTopIfScrolled(id){
     });
 }
 
+function yestinCopyright(){
+    console.clear();
+    console.log("%c#################################################",'color:#1166E8');
+    console.log("%c    //  // ////// ////// /////// ////// //    //\n   //  // //     //        //     //   ///   //\n   ////  //     //        //     //   ////  //\n   //   /////  //////    //     //   // // //\n  //   //         //    //     //   //  ////\n //   //         //    //     //   //   /// \n//   //////  /////    //   ////// //    //",'color:#1166E8');
+    console.log("%c#################################################",'color:#1166E8');
+    console.log("Is there any bug in this page?");
+    console.log("%cPlease report to me if you find any bug. http://blog.iyestin.com/contact-me",'color:#D94530');
+    console.log("%cOr Visit the code if you are interested. https://github.com/yestinchan/yestin-one",'color:#D94530');
+}
+
 $(document).ready(
     function(){
         setOnTopIfScrolled("menu-top");
@@ -154,5 +164,6 @@ $(document).ready(
         $(".post-list-entries").bind("mouseleave",function(){
              $(this).removeClass("post-list-entries-selected");
         });
+        yestinCopyright();
     }
 );
